@@ -1,0 +1,53 @@
+{
+  "name": "jaeger-tracer-als",
+  "version": "1.0.1",
+  "description": "helpers for jeager with async local storage",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test:unit": "jest --coverage --detectOpenHandles",
+    "test": "npm run test:unit",
+    "watch:nodemon": "concurrently --kill-others \"tsc -w\" \"nodemon --inspect ./lib/app.js\"",
+    "lint": "tslint -q -p . -c tslint.json",
+    "run": "node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnshew/jaeger-tracer-als.git"
+  },
+  "keywords": [
+    "jaegar",
+    "client",
+    "instrument",
+    "instrumenting",
+    "opentracing",
+    "restify",
+    "nodejs",
+    "node js",
+    "node",
+    "jaegar-client",
+    "async-local-storage"
+  ],
+  "author": "johnshew",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/johnshew/jaeger-tracer-als/issues"
+  },
+  "homepage": "https://github.com/johnshew/jaeger-tracer-als#readme",
+  "dependencies": {
+    "got": "^9.6.0",
+    "jaeger-client": "^3.15.0",
+    "nano-seconds": "^1.2.2",
+    "restify": "^8.3.2"
+  },
+  "devDependencies": {
+    "opentracing": "^0.14.3",
+    "@types/got": "^9.4.4",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^10.14.7",
+    "@types/restify": "^7.2.10",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}
