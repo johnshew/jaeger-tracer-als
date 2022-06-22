@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/johnshew/jaeger-tracer-als#readme",
   "dependencies": {
-    "got": "^9.6.0",
+    "got": "^11.8.5",
     "jaeger-client": "^3.15.0",
     "nano-seconds": "^1.2.2",
     "restify": "^8.3.2"
